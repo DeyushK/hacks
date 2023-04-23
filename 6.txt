@@ -1,0 +1,49 @@
+Experiment 6:
+
+CMD Commands:
+
+mkdir webapp 
+cd webapp
+py -m venv venv
+cd venv/bin
+activate.bat
+pip install selenium
+
+Create repository in Pycharm creating new directory demo and python file sample.py
+
+Pycharm:
+Copy paste:
+
+import time
+import selenium
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+print("Starting Selenium test")
+# Set up the driver
+
+driver = webdriver.Chrome()
+# Navigate to the website
+driver.get("https://google.com")
+
+# Find the input element and enter some text
+input_elem = driver.find_element("name","q")
+input_elem.send_keys("javatpoint")
+
+time.sleep(2)
+
+# Click the submit button
+submit_button = driver.find_element("name","btnK")
+
+
+time.sleep(2)
+# Verify that the correct page is displayed
+ 
+
+
+# Close the browser window
+driver.close()
+
+print("Selenium Test Successful.")
+
+Note: If required, install selenium in Pycharm terminal.

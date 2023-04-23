@@ -1,0 +1,21 @@
+Experiment 3:
+CI for Java Files in Github:
+
+Configure:
+
+SCM:
+Git: https://github.com/All-Father06/CI-CD.git
+Branch Specifier: Leave Blank
+
+Build Triggers:
+Build periodically: Schedule: * * * * *
+
+Build Steps: 
+Environment: Windows Batch Command
+Command: 
+javac Addition.java
+java Addition
+
+Apply & Save.
+
+Build Now & Check Console for output.

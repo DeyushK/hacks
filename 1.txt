@@ -1,0 +1,14 @@
+open git bash in folder
+PUSH:
+
+git init
+git add . 
+git status
+git commit -m 'First commit' 
+git remote add origin 'your_url_name'
+git push -u origin master
+
+PULL:
+git checkout -b 'fix'.
+git push origin 'fix'
+git pull-request

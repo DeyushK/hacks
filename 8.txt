@@ -1,0 +1,11 @@
+docker pull ubuntu
+docker run -it ubuntu /bin/bash
+touch example.txt
+exit
+docker ps -a
+docker commit [CONTAINER ID] my-ubuntu-image
+docker login
+Username:
+Password:
+docker tag my-ubuntu-image exampleuser/my-ubuntu-image
+docker push exampleuser/my-ubuntu-image

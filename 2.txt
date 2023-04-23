@@ -1,0 +1,19 @@
+Experiment 2:
+
+Jenkins Freestyle Project Configuration:
+
+General:
+Advanced:
+Use custom workspace:
+Directory: C:\Users\hp\Documents\Courses\CICD
+
+Build Steps:
+Add build step: Windows batch command
+Commands:
+javac Addition.java
+java Addition
+
+Apply & Save.
+Build Now.
+Check console for output.
+
