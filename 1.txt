@@ -4,9 +4,9 @@ PUSH:
 git init
 git add . 
 git status
-git commit -m 'First commit' 
+git commit -m 'First commit' git status
 git remote add origin 'your_url_name'
-git push -u origin master
+git push -u origin main
 
 PULL:
 git checkout -b 'fix'.

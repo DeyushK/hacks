@@ -1,0 +1,18 @@
+Experiment 5:
+Open Jenkins and create new pipeline project:
+
+Configure:
+
+Build Triggers:
+Build periodically: H * * * *
+
+Pipeline: 
+Definition: Pipeline Script from SCM
+SCM: Git
+Repository URL: https://github.com/All-Father06/declarative-pipeline.git
+Branch Specifier: main
+Script Path: Jenkinsfile
+
+Apply & Save.
+
+Build Now & Check for all stages completion and console output.
